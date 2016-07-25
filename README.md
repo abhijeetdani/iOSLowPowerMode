@@ -14,4 +14,6 @@ Steps to test:<br/>
 3. Go to Settings->Battery and toggle the low power mode option.<br/>
 4. Come back to the app and you will see the text change to display the current toggled state.<br/>
 
+Demonstration of this plugin can be found at https://youtu.be/mxzhWltq96M
+
 FYI: The current callback function resides in "GameManager.cs" script attached to the "Game Manager" gameobject in the scene. If you want to use this project out-of-box then just add your custom code inside this callback.

@@ -26,6 +26,9 @@
     bool isLowPowerMode = [[NSProcessInfo processInfo] isLowPowerModeEnabled];
     NSString *islowPowerModeString = (isLowPowerMode) ? @"YES" : @"NO";
     const char* cString = [islowPowerModeString cStringUsingEncoding:NSASCIIStringEncoding];
+    // First Param: Name of the gameobject the script with callback function is attached to
+    // Second Param: Name of the callback function
+    // Third Param: String representing the state of low power mode
     UnitySendMessage("Game Manager", "lowPowerModeOn", cString);
 }
 
